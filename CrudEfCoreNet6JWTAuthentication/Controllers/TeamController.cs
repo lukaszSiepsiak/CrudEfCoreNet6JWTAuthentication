@@ -1,10 +1,13 @@
 ﻿using CrudEfCoreNet6JWTAuthentication.Data;
 using CrudEfCoreNet6JWTAuthentication.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CrudEfCoreNet6JWTAuthentication.Controllers;
 
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 [ApiController]
 [Route("[controller]")]
 public class TeamController: ControllerBase

@@ -2,7 +2,6 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using CrudEfCoreNet6JWTAuthentication.Configurations;
 using CrudEfCoreNet6JWTAuthentication.Models;
 using CrudEfCoreNet6JWTAuthentication.Models.Dtos;
 using Microsoft.AspNetCore.Identity;
